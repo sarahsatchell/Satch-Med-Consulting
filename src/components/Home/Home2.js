@@ -1,13 +1,13 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/david.png";
 import Tilt from "react-parallax-tilt";
 import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
+  AiFillMail,
+  AiFillPhone,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+
 
 function Home2() {
   return (
@@ -19,10 +19,9 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              San Francisco <b className="purple">Bay Area</b> 
               <br />
-              <br />I am fluent in classics like
+              {/* <br />I am fluent in classics like
               <i>
                 <b className="purple"> C++, Javascript and Go. </b>
               </i>
@@ -48,8 +47,8 @@ function Home2() {
               </i>
               &nbsp; like
               <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+                <b className="purple"> React.js and Next.js</b> */}
+              {/* </i> */}
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -60,34 +59,34 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
+            <h1>REACH OUT</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              to <span className="purple">connect </span>with me
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="mailto:david@satchmedconsulting.com"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <AiFillGithub />
+                  <AiFillMail />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
+                  href="tel:+14085945810"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <AiOutlineTwitter />
+                  <AiFillPhone />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/david-satchell/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -95,21 +94,13 @@ function Home2() {
                   <FaLinkedinIn />
                 </a>
               </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li>
             </ul>
           </Col>
         </Row>
       </Container>
     </Container>
+    
   );
+  
 }
 export default Home2;
